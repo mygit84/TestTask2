@@ -2,7 +2,9 @@
 
 ## Реализация
 ##### Поддержка браузеров
-Последние версии: FF, Chrome, Opera, Edge, Safari, IE11
+* Последние версии (десктоп): FF, Chrome, Opera, Edge, Safari, IE11, Yandex.Браузер 
+* Последние версии (мобильные): FF, Chrome, iOS Safari, Yandex.Браузер, Samsung Internet
+
 ##### [Demo](https://mygit84-demo.github.io/demoAFF/)
 
 * С 1440px по 320px адаптив с резиной, перестройка на 767px.
