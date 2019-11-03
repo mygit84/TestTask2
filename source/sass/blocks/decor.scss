@@ -72,11 +72,6 @@
     font-family: $geometria;
     font-weight: 500;
     font-size: 80px;
-    color: $white;
-    text-shadow: 1px 0 1px $black,
-    0 1px 1px $black,
-    -1px 0 1px $black,
-    0 -1px 1px $black;
 
     @media (max-width: $width-tablet) {
       color: $yellow;
@@ -85,27 +80,25 @@
     }
 
     &--top {
-      top: 39px;
+      top: 38px;
       right: 27.9%;
       z-index: 20;
 
       @media (max-width: $width-tablet) {
-        top: 222px;
+        top: 202px;
         left: 20.9%;
-        mix-blend-mode: luminosity;
         z-index: 20;
       }
     }
 
     &--right {
       top: 119px;
-      right: 16.3%;
+      right: 15.5%;
       z-index: 5;
 
       @media (max-width: $width-tablet) {
-        top: 129px;
-        right: 20.3%;
-        mix-blend-mode: luminosity;
+        top: 107px;
+        right: 13.3%;
         z-index: 20;
       }
     }
@@ -305,7 +298,7 @@
     right: 23.7%;
     font-family: $geometria;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 45px;
     letter-spacing: 5px;
     z-index: 22;
