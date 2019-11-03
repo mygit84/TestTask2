@@ -1,0 +1,14 @@
+.main-content {
+  position: relative;
+  max-width: $width-max;
+  margin: 0 auto;
+  padding: 15px;
+  padding-bottom: 67px;
+
+  @media (max-width: $width-tablet) {
+    display: flex;
+    padding: 0;
+    background-color: $yellow;
+    overflow: hidden;
+  }
+}

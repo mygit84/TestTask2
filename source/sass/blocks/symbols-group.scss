@@ -1,0 +1,132 @@
+.symbols-group {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  z-index: 30;
+
+  &--first {
+
+    @media (max-width: $width-tablet) {
+      display: none;
+    }
+  }
+
+  &--second {
+    margin-left: -2px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &--letter-shadow {
+      position: relative;
+    }
+  }
+
+  &__symbol {
+
+    &--black-first {
+      margin-top: -2px;
+      margin-left: 10px;
+    }
+
+    &--black-second {
+      margin-top: 40px;
+      margin-left: 42px;
+
+      @media (max-width: $width-tablet) {
+        content: "";
+        position: absolute;
+        top: -282px;
+        right: -83.8%;
+        margin: 0;
+      }
+    }
+
+    &--white-first {
+      content: "";
+      position: absolute;
+      bottom: 15px;
+      left: 450px;
+    }
+
+    &--white-second {
+      margin-top: 7px;
+      margin-left: 36px;
+
+      @media (max-width: $width-tablet) {
+        margin-right: 80px;
+        margin-bottom: 28px;
+      }
+    }
+  }
+
+  &__letter {
+
+    &--a-first {
+      margin-top: 26px;
+      margin-left: 84px;
+    }
+
+    &--a-second {
+      margin-top: 24px;
+      margin-left: -2px;
+
+      @media (max-width: $width-tablet) {
+        display: none;
+      }
+    }
+
+    &--f-first {
+      margin-top: 10px;
+      margin-left: 49px;
+    }
+
+    &--f-second {
+      margin-top: 15px;
+      margin-left: 113px;
+    }
+
+    &--i-first {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      margin-left: 45px;
+    }
+
+    &--n-first {
+      margin-bottom: 30px;
+      margin-left: 111px;
+    }
+
+    &--e-first {
+      margin-top: 60px;
+      margin-left: 93px;
+
+      @media (max-width: $width-tablet) {
+        display: none;
+      }
+    }
+
+    &--shadow {
+      margin-top: 32px;
+      margin-left: 43px;
+
+      @media (max-width: $width-tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &__letter-shadow {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    @media (max-width: $width-tablet) {
+      display: none;
+    }
+  }
+}
