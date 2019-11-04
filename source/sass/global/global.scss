@@ -13,6 +13,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
+  box-sizing: border-box;
   background-color: $light-color;
   background-image: url("../img/bg-page.png");
   background-size: cover;
