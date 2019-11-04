@@ -5,14 +5,14 @@
   width: 50%;
   z-index: 30;
 
-  &--first {
+  &--left {
 
     @media (max-width: $width-tablet) {
       display: none;
     }
   }
 
-  &--second {
+  &--right {
     margin-left: -2px;
   }
 
@@ -25,14 +25,63 @@
     }
   }
 
-  &__symbol {
+  &--left .symbols-group__symbol {
 
-    &--black-first {
+    &--black {
       margin-top: -2px;
       margin-left: 10px;
     }
 
-    &--black-second {
+    &--white {
+      content: "";
+      position: absolute;
+      bottom: 15px;
+      left: 450px;
+    }
+  }
+
+  &--left .symbols-group__letter {
+
+    &--a {
+      margin-top: 26px;
+      margin-left: 84px;
+    }
+
+    &--f-top {
+      margin-top: 10px;
+      margin-left: 49px;
+    }
+
+    &--f-bottom {
+      margin-top: 15px;
+      margin-left: 113px;
+    }
+
+    &--i {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      margin-left: 45px;
+    }
+
+    &--n {
+      margin-bottom: 30px;
+      margin-left: 111px;
+    }
+  }
+
+  &--right .symbols-group__symbol {
+
+    &--white {
+      margin-top: 5px;
+      margin-left: 33px;
+
+      @media (max-width: $width-tablet) {
+        margin-right: 80px;
+        margin-bottom: 28px;
+      }
+    }
+
+    &--black {
       margin-top: 40px;
       margin-left: 42px;
 
@@ -44,33 +93,11 @@
         margin: 0;
       }
     }
-
-    &--white-first {
-      content: "";
-      position: absolute;
-      bottom: 15px;
-      left: 450px;
-    }
-
-    &--white-second {
-      margin-top: 7px;
-      margin-left: 36px;
-
-      @media (max-width: $width-tablet) {
-        margin-right: 80px;
-        margin-bottom: 28px;
-      }
-    }
   }
 
-  &__letter {
+  &--right .symbols-group__letter {
 
-    &--a-first {
-      margin-top: 26px;
-      margin-left: 84px;
-    }
-
-    &--a-second {
+    &--a {
       margin-top: 24px;
       margin-left: -2px;
 
@@ -79,28 +106,7 @@
       }
     }
 
-    &--f-first {
-      margin-top: 10px;
-      margin-left: 49px;
-    }
-
-    &--f-second {
-      margin-top: 15px;
-      margin-left: 113px;
-    }
-
-    &--i-first {
-      margin-top: 28px;
-      margin-bottom: 10px;
-      margin-left: 45px;
-    }
-
-    &--n-first {
-      margin-bottom: 30px;
-      margin-left: 111px;
-    }
-
-    &--e-first {
+    &--e {
       margin-top: 60px;
       margin-left: 93px;
 

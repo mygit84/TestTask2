@@ -46,6 +46,17 @@
       width: 62.5%;
       z-index: 2;
 
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($yellow, 0.8);
+        z-index: 21;
+      }
+
       @media (max-width: $width-tablet) {
         width: 74%;
         height: 184px;
@@ -67,42 +78,31 @@
       height: 525px;
     }
 
-    &--thumbs .slider__image-overlay {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($yellow, 0.8);
-      z-index: 21;
-    }
-
     &--main {
       position: relative;
       width: 100%;
       margin-top: -438px;
       z-index: 5;
 
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, rgba($white, 0) 0,
+        rgba($white, 0) 32.65%, rgba($yellow, 0.8) 32.65%, rgba($yellow, 0.8) 100%);
+        z-index: 21;
+
+        @media (max-width: $width-tablet) {
+          background-image: linear-gradient(to right, rgba($yellow, 0.8));
+        }
+      }
+
       @media (max-width: $width-tablet) {
         height: 318px;
         margin-top: -15px;
-      }
-    }
-
-    &--main .slider__image-overlay {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(to right, rgba($white, 0) 0,
-      rgba($white, 0) 32.65%, rgba($yellow, 0.8) 32.65%, rgba($yellow, 0.8) 100%);
-      z-index: 20;
-
-      @media (max-width: $width-tablet) {
-        background-image: linear-gradient(to right, rgba($yellow, 0.8));
       }
     }
   }
@@ -187,8 +187,8 @@
     font-size: 0;
     line-height: 0;
     border: none;
-    border-right: 4px solid $dark-yellow;
-    border-bottom: 4px solid $dark-yellow;
+    border-right: 4px solid rgba($black, 0.4);
+    border-bottom: 4px solid rgba($black, 0.4);
     background-color: transparent;
     outline: none;
     cursor: pointer;

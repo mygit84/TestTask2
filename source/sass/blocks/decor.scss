@@ -66,7 +66,7 @@
     }
   }
 
-  &__letter-new-font {
+  &__letter-svg {
     content: "";
     position: absolute;
     font-family: $geometria;
@@ -303,25 +303,25 @@
     letter-spacing: 5px;
     z-index: 22;
 
+    &::after {
+      content: "";
+      position: absolute;
+      top: 43px;
+      left: 57px;
+      width: 17px;
+      height: 3px;
+      background-color: $black;
+      z-index: 22;
+
+      @media (max-width: $width-tablet) {
+        display: none;
+      }
+    }
+
     @media (max-width: $width-tablet) {
       font-size: 20px;
       top: 525px;
       right: 4.5%;
-    }
-  }
-
-  &__figure-line {
-    content: "";
-    position: absolute;
-    top: 593px;
-    right: 22.4%;
-    width: 17px;
-    height: 3px;
-    background-color: $black;
-    z-index: 22;
-
-    @media (max-width: $width-tablet) {
-      display: none;
     }
   }
 
